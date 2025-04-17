@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!  
 I'm a passionate Frontend Developer skilled in building responsive, modern, and interactive web applications using **React.js**, **JavaScript**, **HTML**, **CSS**, and more.
 
-🔗 **Live Portfolio:** [https://vaishnavivangari.netlify.app](https://vaishnavivangari.netlify.app)
+🔗 **Live Portfolio:** [https://vaishnavivangari.vercel.app](https://portfolio-puce-five-75.vercel.app/)
 
 ---
 
@@ -12,7 +12,7 @@ I'm a passionate Frontend Developer skilled in building responsive, modern, and 
 - 💻 HTML5, CSS3, JavaScript ES6+
 - ⚛️ React.js
 -  Git & GitHub
--  Visual Studio Code
+-  Visual Studio Code,vercel
 
 
 ---
