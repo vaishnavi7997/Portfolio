@@ -1,0 +1,48 @@
+.contact__form-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(216, 112, 147, 0.833);
+
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+.contact__form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--pink-theme-main-color);
+  color: var(--pink-theme-secondary-color-color);
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact__form button:hover {
+  background: var(--pink-theme-nav-background-color);
+  color: var(--pink-theme-main-color);
+}

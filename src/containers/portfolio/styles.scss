@@ -1,0 +1,101 @@
+.portfolio {
+    min-height: 100vh;
+    background-color: var(--pink-theme-background-color);
+    overflow-y: auto;
+}
+
+.portfolio__content {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive */
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.portfolio__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.portfolio__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.29), rgba(23, 1, 13, 0.642)); /* Adjust as needed */
+    z-index: 1;
+    border-radius: 16px;
+    transition: opacity 0.4s ease;
+}
+
+.portfolio__card:hover {
+    transform: scale(1.05);
+}
+
+.portfolio__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    z-index: 0;
+}
+
+.portfolio__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--pink-theme-main-color);
+    color: var(--pink-theme-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 1rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.portfolio__card:hover .portfolio__overlay {
+    opacity: 1;
+}
+
+.portfolio__overlay h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.portfolio__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.portfolio__links a {
+    color: var(--pink-theme-background-color);
+    background: var(--pink-theme-sub-text-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: larger;
+    transition: background 0.3s;
+}
+
+.portfolio__links a:hover {
+    background: var(--pink-theme-secondary-color);
+}
+
+#portfolio {
+    max-height: 100vh;
+    overflow-y: auto;
+}
