@@ -1,15 +1,17 @@
 .portfolio {
     min-height: 100vh;
     background-color: var(--pink-theme-background-color);
-    overflow-y: auto;
+   overflow-x: hidden; 
+    padding: 5px 10px; 
 }
 
 .portfolio__content {
-    margin: 20px;
+    margin: 25px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive */
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5rem;
     padding: 2rem 0;
+    overflow-y: auto; 
 }
 
 .portfolio__card {
@@ -27,7 +29,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.29), rgba(23, 1, 13, 0.642)); /* Adjust as needed */
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.29), rgba(23, 1, 13, 0.642));
     z-index: 1;
     border-radius: 16px;
     transition: opacity 0.4s ease;
@@ -93,6 +95,27 @@
 
 .portfolio__links a:hover {
     background: var(--pink-theme-secondary-color);
+}
+
+
+@media (max-width: 768px) {
+    .portfolio__content {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio__content {
+        grid-template-columns: 1fr; 
+    }
+
+    .portfolio__overlay h3 {
+        font-size: 1.5rem; 
+    }
+
+    .portfolio__links a {
+        font-size: medium; 
+    }
 }
 
 #portfolio {

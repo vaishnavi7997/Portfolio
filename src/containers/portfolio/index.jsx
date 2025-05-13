@@ -11,16 +11,18 @@ import ImageSeven from '../../images/img7.jpg';
 import ImageEight from '../../images/img8.jpg';
 import ImageNine from '../../images/img9.jpg';
 import ImageTen from '../../images/img10.jpg';
+import ImageEleven from '../../images/img11.png';
 
 import './styles.scss';
 
 const portfolioData = [
   {
     id: 1,
-    name: "To-Do App",
-    image: ImageOne,
-    github: "https://github.com/vaishnavi7997/React-To-Do-List-Project",
-    live: "https://react-to-do-list-project-gamma.vercel.app/"
+    name: "Eductional Website",
+    image: ImageEleven,
+    github: "https://github.com/vaishnavi7997/academia-online-learning-platform",
+    live: "https://academia-online-learning-platform.vercel.app/"
+    
   },
   {
     id: 2,
@@ -84,8 +86,17 @@ const portfolioData = [
     image: ImageTen,
     github: "https://github.com/vaishnavi7997/Music-player-JavaScript-project",
     live: "https://music-player-tau-three.vercel.app/"
+  },
+  {
+    id: 11,
+    name: "To-Do App",
+    image: ImageOne,
+    github: "https://github.com/vaishnavi7997/React-To-Do-List-Project",
+    live: "https://react-to-do-list-project-gamma.vercel.app/" 
   }
 ];
+
+ 
 
 const Portfolio = () => {
   return (
